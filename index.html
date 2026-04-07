@@ -120,8 +120,6 @@ nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(11,30,45,.97);ba
 .hero-img{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80') center/cover no-repeat;filter:brightness(.3)}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,30,45,.95) 0%,rgba(11,30,45,.6) 55%,rgba(26,96,128,.2) 100%)}
 .hero-content{position:relative;z-index:2;max-width:1100px;margin:0 auto;padding:120px 40px 80px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.badge-open{display:inline-flex;align-items:center;gap:8px;background:rgba(90,180,212,.12);border:1px solid rgba(90,180,212,.32);color:#5ab4d4;font-family:'Barlow Condensed',sans-serif;font-size:.83rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 14px;border-radius:2px;margin-bottom:22px}
-.badge-rge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,85,10,.12);border:1px solid rgba(200,85,10,.32);color:#f0a070;font-family:'Barlow Condensed',sans-serif;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:2px;margin-left:8px;margin-bottom:22px}
 @keyframes heroIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
 @keyframes floatIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
 .hero h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(3rem,6vw,5.4rem);line-height:.93;color:var(--white);text-transform:uppercase;letter-spacing:-.01em;margin-bottom:8px;animation:heroIn .85s ease-out both}
@@ -153,12 +151,6 @@ nav{position:fixed;top:0;width:100%;z-index:200;background:rgba(11,30,45,.97);ba
 .cta-band a.secondary{display:inline-flex;align-items:center;gap:10px;background:transparent;color:white;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:.05em;padding:13px 28px;border:2px solid rgba(255,255,255,.35);border-radius:2px;text-decoration:none;transition:border-color .2s,background .2s}
 .cta-band a.secondary:hover{border-color:white;background:rgba(255,255,255,.08)}
 
-/* CERTIFS BAND */
-.certif-band{background:var(--cream);padding:22px 40px;border-bottom:1px solid rgba(0,0,0,.07)}
-.certif-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap}
-.certif-item{display:flex;align-items:center;gap:9px;font-family:'Barlow Condensed',sans-serif;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.certif-icon{width:32px;height:32px;background:linear-gradient(135deg,#1a6080,#0e3047);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
-
 /* PHOTOS */
 .photos-band{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;height:260px}
 .photos-band figure{overflow:hidden;position:relative;margin:0}
@@ -185,7 +177,6 @@ h2.section-title span{color:#1a6080}
 .service-card:hover .icon{background:rgba(26,96,128,.18)}
 .service-card h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.12rem;letter-spacing:.03em;text-transform:uppercase;color:var(--navy);margin-bottom:7px}
 .service-card p{color:var(--muted);font-size:.87rem;line-height:1.65}
-.service-card .aide-badge{display:inline-block;margin-top:8px;background:rgba(200,85,10,.1);color:#c8550a;font-family:'Barlow Condensed',sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:2px}
 
 /* ABOUT */
 .about-bg{background:var(--navy)}
@@ -290,8 +281,6 @@ footer{background:#060d13;padding:44px 40px 32px}
   .cta-band{padding:26px 20px}
   .photos-band{grid-template-columns:1fr 1fr;height:300px}
   .footer-inner{grid-template-columns:1fr;gap:28px}
-  .certif-band{padding:18px 20px}
-  .certif-inner{gap:22px}
 }
 @media(max-width:600px){
   .services-grid{grid-template-columns:1fr}
@@ -361,10 +350,6 @@ footer{background:#060d13;padding:44px 40px 32px}
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div>
-      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:22px">
-        <div class="badge-open" style="margin-bottom:0">⭐ Note Google 5/5</div>
-        <div class="badge-rge" style="margin-bottom:0;margin-left:0">🏅 RGE Qualibat &amp; QualiPac</div>
-      </div>
       <div class="hero-sub">Plomberie · Chauffage · Sanitaire · Beaumont</div>
       <h1>Brunet<br><em>SARL</em></h1>
       <p class="hero-desc">Entreprise familiale de plomberie et chauffage à Beaumont depuis <strong style="color:white">1970</strong>. Installation de chaudières gaz, pompes à chaleur, climatisation et rénovation salle de bain — dans tout le Puy-de-Dôme.</p>
@@ -401,17 +386,6 @@ footer{background:#060d13;padding:44px 40px 32px}
     </div>
   </div>
 </section>
-
-<!-- CERTIFICATIONS BAND -->
-<div class="certif-band">
-  <div class="certif-inner">
-    <div class="certif-item"><div class="certif-icon">🏅</div>RGE Qualibat E-E111430</div>
-    <div class="certif-item"><div class="certif-icon">♻️</div>RGE QualiPac QPAC/04025</div>
-    <div class="certif-item"><div class="certif-icon">🔵</div>Partenaire GRDF</div>
-    <div class="certif-item"><div class="certif-icon">♿</div>Handibat · Silverbat</div>
-    <div class="certif-item"><div class="certif-icon">💶</div>MaPrimeRénov · CEE · Éco-PTZ</div>
-  </div>
-</div>
 
 <!-- CTA BAND -->
 <div class="cta-band">
@@ -462,13 +436,11 @@ footer{background:#060d13;padding:44px 40px 32px}
         <div class="icon">🔥</div>
         <h4>Chaudières Gaz à Condensation</h4>
         <p>Remplacement, installation et raccordement de chaudières murales gaz à condensation. Partenaire Frisquet — matériel haut de gamme, pose soignée.</p>
-        <span class="aide-badge">Éligible MaPrimeRénov · CEE</span>
       </div>
       <div class="service-card reveal d2">
         <div class="icon">🌡️</div>
         <h4>Pompes à Chaleur (PAC)</h4>
         <p>Installation de PAC hybride, air/eau et aérothermiques. Dossier CEE inclus. Certification RGE QualiPac pour bénéficier des aides financières.</p>
-        <span class="aide-badge">Éligible MaPrimeRénov · Éco-PTZ</span>
       </div>
       <div class="service-card reveal d3">
         <div class="icon">❄️</div>
@@ -499,7 +471,6 @@ footer{background:#060d13;padding:44px 40px 32px}
         <div class="icon">♨️</div>
         <h4>Chauffe-eau</h4>
         <p>Pose et remplacement de chauffe-eau électrique ou thermodynamique. Certification QualiPac pour les chauffe-eau thermodynamiques.</p>
-        <span class="aide-badge">Éligible CEE</span>
       </div>
       <div class="service-card reveal d3">
         <div class="icon">📋</div>
